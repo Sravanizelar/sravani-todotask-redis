@@ -1,0 +1,25 @@
+#apt update
+
+#useradd -m -s /bin/bash app
+
+#cd /home/app/
+
+#git clone https://github.com/zelar-soft-todoapp/users.git
+
+#apt update
+
+#apt install openjdk-8-jre-headless
+
+#apt install openjdk-8-jdk-headless
+
+#export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+
+#apt install maven -y
+
+#cd /home/app/users/
+
+#mvn clean package
+   
+#cd target/
+
+#java -jar users-api-0.0.1.jar
