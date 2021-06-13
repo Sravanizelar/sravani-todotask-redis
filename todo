@@ -1,0 +1,37 @@
+#apt update
+
+#apt install npm -y
+
+#useradd -m -s /bin/bash app
+        
+#cd /home/app/
+
+#git clone https://github.com/zelar-soft-todoapp/todo.git
+
+#cd todo/
+
+#npm install
+
+#vim /etc/systemd/system/todo.service
+
+#systemctl daemon-reload
+  
+#systemctl start todo.service
+
+#systemctl enable todo.service
+   
+#systemctl status todo.service
+
+
+---------------systemd files ===  todo.service files----------------------
+
+[Unit]
+Description=Todo Service
+
+[Service]
+Environment=REDIS_HOST=172.31.91.107
+ExecStart=/bin/node /home/app/todo/server.js
+SyslogIdentifier =todo
+
+[Install]
+WantedBy=multi-user.target
