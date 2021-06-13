@@ -1,0 +1,32 @@
+#apt update
+
+#apt install nginx -y
+
+#systemctl start nginx
+
+#systemctl enable nginx
+
+#apt install npm -y
+
+#cd /var/www/html/
+
+#mkdir todo
+
+#cd todo
+
+#git clone https://github.com/zelar-soft-todoapp/frontend.git
+
+#cd frontend/
+
+#npm install --save-dev  --unsafe-perm node-sass
+
+#cd config/
+
+#vim index.js(given ip address of login and todo)
+
+#cd ..
+
+#systemctl restart nginx
+   
+#npm start
+   
