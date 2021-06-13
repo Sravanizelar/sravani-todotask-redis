@@ -48,7 +48,7 @@ Description = login Service
 [Service]
 user=root
 Environment=AUTH_API_PORT=8080
-Environment=USERS_API_ADDRESS=http://172.31.85.137:8080
+Environment=USERS_API_ADDRESS=http://172.31.90.28:8080
 ExecStart=/root/go/src/login/login
 SyslogIdentifier=login
 
